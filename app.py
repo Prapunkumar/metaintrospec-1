@@ -25,7 +25,7 @@ client_secrets_file = os.path.join(pathlib.Path(__file__).parent,"client-secret.
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile","https://www.googleapis.com/auth/userinfo.email","openid"],
-    redirect_uri="metaintrospec-2.vercel.app"
+    redirect_uri="https://metaintrospec-2-2ws4yi4mv-prapunkumar.vercel.app/submit"
     )
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
