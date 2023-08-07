@@ -186,7 +186,7 @@ def get_scores(questions,answers):
     model="gpt-3.5-turbo",
     messages=[
         {"role":"user","content":prompt1 + "Questions" +  questions + "Answers"+ str(answers)}
-    ]
+    ],
     max_tokens=100,  
     )
     print(response)
